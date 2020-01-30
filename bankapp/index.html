@@ -88,3 +88,72 @@ height: 100%;
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+##########################
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+*{
+margin:0;
+padding:0
+}
+  .bordered {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background:white;
+	color:black;
+	position: absolute;
+	font-family: 'Lobster Two', cursive;
+	margin: auto;
+	width: 50%;
+  }
+  .main-container{
+	position: relative
+  }
+  .sub-container{
+	background:#06DCCB;
+	color: white;
+	padding: 40px;
+	font-family: 'Pacifico', cursive;
+  }
+  
+  
+</style>
+<body> 
+
+    
+    <br>
+
+<div class = "main-container">
+<div class = "sub-container">
+  <h1>Dear {{FirstName}},</h1>
+  <h3>***This is test Email message using Amazon Pinpoint from India Teams***</h3>
+  <p>Thank you for using our business for your business needs. This email is to inform you that we have received and reviewing your order.
+   our commitment to our customers is first priority. <br>
+   As we process your order a business representative will contact you to discuss your order.
+<div class="bordered">
+<p><b>Order No:</b> {{OrderNumber}}</p>
+<b>Order Date:</b> {{OrderDate}}<br><br>
+<b>Service Address:</b><br>
+{{serviceAddress}}
+</div>
+</div>
+</div>
+</body>
+</html> 
